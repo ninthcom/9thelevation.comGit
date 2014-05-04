@@ -1,0 +1,76 @@
+/* Body Styles */
+
+body {margin: 0; background: #FFFFFF}
+
+p,td,li,pre {font: normal 10px verdana,arial,helvetica,sans-serif; color: #666666}
+
+ul {list-style: square}
+
+h1 {font: bold 17pt arial,helvetica,tahoma,sans-serif; color: #333333}
+
+h2 {font: bold 12px verdana,arial,helvetica,sans-serif; color: #666666}
+
+a {color: #333333}
+
+a:hover {color: #FF3300; text-decoration: none}
+
+pre {margin-bottom: 0}
+
+
+
+.hrz_line {background: #a1a1a1}
+
+.hrz_line2 {background-image:  url(file:); height: 1px}
+
+.maincontent {background: #ffffff; padding: 1em}
+
+.colorbar {background: #333333}
+
+.colorbar2 {background: #333333}
+
+.foot {background: #F4F4F4; padding-right: 1em}
+
+.poptop, .popbot {background: #F4F4F4}
+
+.popbot {padding-top: 2px; padding-bottom: 2px; padding-left: 1em}
+
+.section {font: bold 12pt arial,helvetica,tahoma,sans-serif; color: #333333; text-decoration: none}
+
+.menu_icon {padding-bottom: 1em}
+
+.menu_text {padding-bottom: 1em; padding-left: 1em}
+
+.nav_special {color: #ADCEEF; margin-right: 1em}
+
+.nav_link {color: #333333; text-decoration: none}
+
+.breadcrumb, .welcome {margin-top: -1.0em}
+
+.subsection {margin-left: 1.4em}
+
+.subsection_bul {font-size: 12pt}
+
+/* Table Styles */
+
+.tablehead {background: #dddddd}
+
+.rowA {background: #EBECED}
+
+.rowB {background: #EBECED}
+
+.rowC {background: #E5E5E5}
+
+/*#DFEBBC*/
+/* Form Styles */
+.textfield {font-family: verdana, sans-serif; font-size:11px; color:#333333; background:#ffffff; border-top:1px solid #bbbbbb; border-left:1px solid #bbbbbb; border-bottom:1px solid #dddddd; border-right:1px solid #dddddd;}
+
+//.submit {font: normal 8pt "verdana","arial mt","arial narrow","arial"; background: #a1a1a1; color: #efefef}
+
+
+.submit {font: normal 8pt "verdana","arial mt","arial narrow","arial"; background: #999900; color: #ffffff; border: #cccccc 1px outset}
+
+select {font: normal 7pt "verdana","arial mt","arial narrow","arial"; color: #616161;}
+
+select.nav_sel {font: normal 7pt "verdana","arial mt","arial narrow","arial"; color: #999900; background: #666666}
+
+form {margin: 0}
