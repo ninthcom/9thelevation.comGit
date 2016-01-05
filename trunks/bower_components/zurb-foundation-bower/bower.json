@@ -1,0 +1,9 @@
+{
+  "name": "zurb foundation 5 bower",
+  "version": "0.0.1",
+  "description": "foundation 5 v. 5.2.0",
+  "main": [
+    "css/foundation.css",
+    "js/foundation.js"
+  ]
+}

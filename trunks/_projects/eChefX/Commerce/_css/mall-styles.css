@@ -1,0 +1,138 @@
+/* Body Styles */
+pre {margin-bottom: 0}
+
+body {
+	margin: 0;
+	background: #3D0B0B;
+	font: 11px Helvetica, Arial, sans-serif;
+	background-image: url(../images/jpg/canvas/backG.jpg);
+	background-repeat: repeat-x;
+}
+
+p,td,li,pre {font: normal 10px verdana,arial,helvetica,sans-serif; color: #333333}
+
+.frame {
+	width: 800px;
+	margin: auto;
+}
+
+.frametwo {
+	width: 235px;
+	margin: auto;
+}
+
+.contentFrame {
+	width: 100%;
+	margin: auto;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+}
+a:link { color: #3D0B0B; font-weight: bold; text-decoration: none;}
+a:visited { color: #234E8E;font-weight: bold; text-decoration: none;}
+a:hover { color: #FF3300;font-weight: bold; text-decoration: none;}
+
+/*Font Styles */
+
+
+.SiteFontNormalFontCharcol {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: normal;
+}
+.SiteFontNormalCharcolBold {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-weight: bold;
+}
+
+.header{height: 19px; background-color: #cccccc; color: #fff; font-size: 10px;}
+
+.foot {background: #F4F4F4; padding-right: 1em}
+
+.fineprint { font-size: 9px; color: #333; margin-top: 0; padding: 10px; }
+
+.fineprintTwo { font-size: 10px; color: #333; margin-top: 0; padding: 0px; }
+
+.section {font: bold 12pt arial,helvetica,tahoma,sans-serif; color: #333333; text-decoration: none}
+
+.menu{
+	height: 19px;
+	font-size: 12px Helvetica, Arial, sans-serif;
+	color: #3399CC;
+	text-decoration: none;
+	overflow: hidden;
+	font-variant: normal;
+	background-color: #FFFFFF;
+	margin-top: 2px;
+}
+
+/* Line Dot Styles */
+
+.HZLine {
+	color: #B1AD95;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+}
+.BoxLine {
+	color: #999999;
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-top-width: thin;
+	border-left-style: solid;
+	border-left-width: thin;
+	border-right-style: solid;
+	border-right-width: thin;
+}
+.verticleDots {
+	color: #999999;
+	border-right-style: dotted;
+	border-right-width: thin;
+}
+
+.verticleDotsTwo {
+	color: #999999;
+	border-right-style: dotted;
+	border-right-width: thin;
+	border-left-style: dotted;
+	border-left-width: thin;
+}
+
+.verticleLineBlue {
+	color: #B1AD95;
+	border-right-style: solid;
+	border-right-width: thin;
+
+}
+
+.verticleLineLeftSide {
+	color: #B1AD95;
+	border-left-style: solid;
+	border-left-width: thin;
+}
+.menuDots {
+	color: #999999;
+	border-bottom-style: dotted;
+	border-bottom-width: thin;
+}
+.menuDotsTop {
+	color: #999999;
+	border-top-style: dotted;
+	border-top-width: thin;
+}
+
+
+
+/* Form Styles */
+.textfield {font-family: verdana, sans-serif; font-size:11px; color:#333333; background:#ffffff; border-top:1px solid #bbbbbb; border-left:1px solid #bbbbbb; border-bottom:1px solid #dddddd; border-right:1px solid #dddddd;}
+
+//.submit {font: normal 8pt "verdana","arial mt","arial narrow","arial"; background: #a1a1a1; color: #efefef}
+
+
+.submit {font: normal 8pt "verdana","arial mt","arial narrow","arial"; background: #3D0B0B; color: #ffffff; border: #cccccc 1px outset}
+
+select {font: normal 7pt "verdana","arial mt","arial narrow","arial"; color: #616161;}
+
+select.nav_sel {font: normal 7pt "verdana","arial mt","arial narrow","arial"; color: #999900; background: #666666}
+
+form {margin: 0}

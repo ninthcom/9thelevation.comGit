@@ -1,0 +1,353 @@
+.footer_close, .close_cell {
+  position: absolute;
+  bottom: 0;
+  width: $hundred_percent;
+  height: 39px;
+  background-color: $light_grey;
+  background-size: $hundred_percent;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out 0.3s;
+  -moz-transition: all 0.25s ease-in-out 0.3s;
+  -ms-transition: all 0.25s ease-in-out 0.3s;
+  -o-transition: all 0.25s ease-in-out 0.3s;
+  transition: all 0.25s ease-in-out 0.3s;
+  *zoom: 1;
+ }
+
+ %close_defaults {
+	position: absolute;
+  bottom: 0;
+  width: $hundred_percent;
+  height: 39px;
+  background-size: $hundred_percent;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease-in-out 0.3s;
+  -moz-transition: all 0.25s ease-in-out 0.3s;
+  -ms-transition: all 0.25s ease-in-out 0.3s;
+  -o-transition: all 0.25s ease-in-out 0.3s;
+  transition: all 0.25s ease-in-out 0.3s;
+  *zoom: 1;
+ }
+
+%close_button_defaults {
+  position: relative;
+	top: 15px;
+	margin: 0 auto;
+	width: 15px;
+	height: 10px;
+	background: url(../images/systems_open_cell.png) no-repeat transparent;
+}
+
+// ------------------------------------------------------ category_01
+.close_cell_category_01 {
+	@extend  %close_defaults;
+	color: $magenta;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_01_color {
+	background: $magenta;
+}
+
+.category_01_testinonial_color {
+	border-bottom: $gray 5px solid;
+	border-top: $gray 5px solid;
+}
+
+// ------------------------------------------------------ category_02
+.close_cell_category_02 {
+	@extend  %close_defaults;
+	color: $blue_accent;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_02_color {
+	background: $blue_accent;
+}
+
+.category_02_testinonial_color {
+ border-bottom: $blue_accent 5px solid;
+ border-top: $blue_accent 5px solid;
+}
+
+
+// ------------------------------------------------------ category_03
+.close_cell_category_03 {
+	@extend  %close_defaults;
+	color: $orange;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_03_color {
+	background: $orange;
+}
+
+.category_03_testinonial_color {
+ border-bottom: $orange 5px solid;
+ border-top: $orange 5px solid;
+}
+
+
+// ------------------------------------------------------ category_04
+.close_cell_category_04 {
+	@extend  %close_defaults;
+	color: $medium_blue;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_04_color {
+	background: $medium_blue;
+}
+
+.category_04_testinonial_color {
+ border-bottom: $medium_blue 5px solid;
+ border-top: $medium_blue 5px solid;
+}
+
+
+// ------------------------------------------------------ category_05
+.close_cell_category_05 {
+	@extend  %close_defaults;
+	color: $yellow;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_05_color {
+	background: $yellow;
+}
+
+.category_05_testinonial_color {
+ border-bottom: $yellow 5px solid;
+ border-top: $yellow 5px solid;
+}
+
+// ------------------------------------------------------ category_06
+.close_cell_category_06 {
+	@extend  %close_defaults;
+	color: $green;
+
+	div.close_button {
+		@extend %close_button_defaults;
+	}
+}
+
+.category_06_color {
+	background: $green;
+}
+
+.category_06_testinonial_color {
+ border-bottom: $green 5px solid;
+ border-top: $green 5px solid;
+}
+
+
+// ---------------- Cell Collapsed
+
+.iso_small_style {
+	width: $small_cell_desktop;
+  height: 80px;
+
+	@media all and (min-width: 601px) and (max-width: 765px) {
+		width: $small_cell_desktop;
+	}
+
+	@media all and (min-width: 320px) and (max-width: 600px) {
+		width: $small_cell_phone;
+	}
+
+	header {
+		width: $small_cell_desktop;
+		height: 80px;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+
+	  @media all and (min-width: 601px) and (max-width: 767px) {
+			width: $small_cell_desktop;
+		}
+
+	  @media all and (min-width: 320px) and (max-width: 600px) {
+		  width: $small_cell_phone;
+		}
+
+		.meta {
+		 position: absolute;
+		 bottom: 5px;
+		 color: #ff9818;
+		 font-size: 18px;
+		 line-height: 18px;
+		}
+
+		h3 {
+		 position: absolute;
+		 right: 0;
+		 bottom: 20px;
+		 -webkit-transition: bottom 0.15s ease-out 0.4s;
+		 -moz-transition: bottom 0.15s ease-out 0.4s;
+		 -ms-transition: bottom 0.15s ease-out 0.4s;
+		 -o-transition: bottom 0.15s ease-out 0.4s;
+		 transition: bottom 0.15s ease-out 0.4s;
+		}
+ 	}
+}
+
+// ---------------- Cell Extpanded
+
+.small-long {
+	position: relative;
+  z-index: 100;
+  height: 80px;
+  width: $expanded_cell_desktop;
+
+	@media all and (min-width: 601px) and (max-width: 765px) {
+		width: $expanded_cell_desktop;
+	}
+
+	@media all and (min-width: 320px) and (max-width: 600px) {
+		width: $small_cell_phone;
+	}
+
+	header {
+	  height: 80px;
+	  width: $expanded_cell_desktop;
+	}
+}
+
+// ---------------- Testinmonials EXTEND
+
+%footer_catagory_basics {
+	position: fixed;
+	top: 158px;
+	display: block;
+	padding: 0 5px 0 0;
+	width: 215px;
+	height: 12px;
+	color: $white;
+	text-align: right;
+	font-size: 9px;
+}
+
+// ---------------- testinonial Long Static Style
+
+.testinonial {
+	position: absolute;
+	bottom: 0;
+	background-size: $hundred_percent;
+	text-align: center;
+	line-height: 39px;
+	//background-color: $green;
+	-webkit-transition: all 0.25s ease-in-out 0.3s;
+	-moz-transition: all 0.25s ease-in-out 0.3s;
+	-ms-transition: all 0.25s ease-in-out 0.3s;
+	-o-transition: all 0.25s ease-in-out 0.3s;
+	transition: all 0.25s ease-in-out 0.3s;
+	*zoom: 1;
+}
+
+.iso_long_style {
+	height: 170px;
+	width: $small_cell_desktop;
+
+	@media all and (min-width: 601px) and (max-width: 765px) {
+		width: $small_cell_desktop;
+	}
+
+	@media all and (min-width: 320px) and (max-width: 600px) {
+		width: $small_cell_phone;
+	}
+
+	h3 {
+		color: $gray_dark_1;
+		display: none;
+	}
+
+	p {
+		padding: 15px 0 0 0;
+		color: $gray_dark_1;
+	}
+
+	blockquote {
+		font-family: Georgia, serif;
+		font-size: 13px;
+		font-style: italic;
+		line-height: 1.2;
+		position: relative;
+		color: #383838;
+		text-align: left;
+	}
+
+	.cl_footer_catagory {
+		@extend %footer_catagory_basics;
+		background: #0093B2;
+	}
+
+	.sw_footer_catagory {
+		@extend %footer_catagory_basics;
+		background: $blue_accent;
+	}
+
+	.category_01_footer_catagory {
+		@extend %footer_catagory_basics;
+		background: $magenta;
+	}
+
+	.adv_footer_catagory {
+		@extend %footer_catagory_basics;
+		background: $orange;
+	}
+
+	.testinonial_person {
+		width: 100%;
+		display: inline-block;
+
+
+		cite {
+			color: #666666;
+			font-size: 11px;
+			display: inline-block;
+			margin: 10px 5px 5px;
+			text-align: right;
+			font-family: Arial;
+			font-style: italic;
+			font-weight: bold;
+
+			.cite_property {
+				float: right;
+				text-align: right;
+				width: 100%;
+				display: block;
+			 font-weight: normal;
+			}
+
+			.cite_location {
+				float: right;
+				text-align: right;
+				width: 100%;
+				display: block;
+				font-weight: normal;
+			}
+		}
+	}
+}
+

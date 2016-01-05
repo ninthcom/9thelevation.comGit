@@ -1,0 +1,39 @@
+.small-long .cell_content,
+.iso_small_style .cell_content {
+  margin-bottom: 20px;
+}
+
+.iso_container .iso_selector.type-system .cell_content,
+.iso_container .iso_selector.type-information .cell_content {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  height: 0;
+}
+
+.iso_container .iso_selector.type-system.current .cell_content,
+.iso_container .iso_selector.type-nyheder.current .cell_content,
+.iso_container .iso_selector.type-information.current .cell_content {
+  overflow: visible;
+  height: auto;
+  padding: 15px;
+}
+
+.iso_container .iso_selector.type-system .cell_content p,
+.iso_container .iso_selector.type-system .cell_content form,
+.iso_container .iso_selector.type-nyheder .cell_content p,
+.iso_container .iso_selector.type-nyheder .cell_content form,
+.iso_container .iso_selector.type-information .cell_content p,
+.iso_container .iso_selector.type-information .cell_content form {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+.iso_container .iso_selector.type-system .cell_content p:first-child,
+.iso_container .iso_selector.type-system .cell_content form:first-child,
+.iso_container .iso_selector.type-nyheder .cell_content p:first-child,
+.iso_container .iso_selector.type-nyheder .cell_content form:first-child,
+.iso_container .iso_selector.type-information .cell_content p:first-child,
+.iso_container .iso_selector.type-information .cell_content form:first-child {
+  margin-top: 0;
+}

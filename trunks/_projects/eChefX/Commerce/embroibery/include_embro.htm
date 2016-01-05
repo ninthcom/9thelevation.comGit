@@ -1,0 +1,510 @@
+<%
+'edit this file for the options you want to display
+'There is no longer a maximum number of options but all must be named option
+'you can delete the options you don't need
+'you can specify a price increase for option but separating the option value with the delimiter (default=$) specified in the wizard
+%>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('../images/roll/view_flagsDwn.jpg','../images/roll/view_fontsDwn.jpg','../images/roll/view_colorsDwn.jpg','../images/roll/fabric_careDwn.jpg')">
+<table width="100%" border="0" cellpadding="0" cellspacing="4" >
+  <tr> 
+    <td height="30" colspan="4" align="center" valign="middle" bgcolor="#CCCCCC"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Name 
+      Embroidery</td>
+  </tr>
+  <tr> 
+    <td width="22%" rowspan="2" align="center" valign="middle" bgcolor="#F4f4f4"><font color="#000000" size="1" face="Arial, Helvetica, sans-serif">Line 
+      1 </td>
+    <td width="37%" align="left" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">(18 
+      characters max)</td>
+    <td rowspan="2" align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">$8.50</td>
+    <td width="18%" rowspan="8" align="left" valign="top"><font size="2" face="Arial, Helvetica, sans-serif">Enter 
+      up to three lines of text for embroidery on a garment. Please consider the 
+      case sensitivity of the text you enter as the garment's embroidery will 
+      reflect the case of the text entered. Select the font for the text, location 
+      of embroidery on the garment, and the thread color of the embroidery from 
+      the selections on the left.</td>
+  </tr>
+  <tr> 
+    <td align="left" valign="middle" bgcolor="#f4f4f4"> <input name="option" type="text" id="option" value="-- line 1 --" maxlength="20"></td>
+  </tr>
+  <tr> 
+    <td rowspan="2" align="center" valign="middle" bgcolor="#F4f4f4"><font color="#000000" size="1" face="Arial, Helvetica, sans-serif">Line 
+      2 </td>
+    <td align="left" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">(18 
+      characters max)<font color="#000000" size="1" face="Arial, Helvetica, sans-serif">&nbsp; 
+      </td>
+    <td rowspan="2" align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">add 
+      $1.25</td>
+  </tr>
+  <tr> 
+    <td align="left" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <input name="option" type="text" id="option" value="-- line 2 --" maxlength="20">
+      </td>
+  </tr>
+  <tr> 
+    <td rowspan="2" align="center" valign="middle" bgcolor="#F4f4f4"><font color="#000000" size="1" face="Arial, Helvetica, sans-serif">Line 
+      3 </td>
+    <td align="left" valign="middle" bgcolor="#f4f4f4"> <font color="#000000" size="2" face="Arial, Helvetica, sans-serif">(18 
+      characters max)<font color="#000000" size="1" face="Arial, Helvetica, sans-serif">&nbsp;<font color="#000000" size="1" face="Arial, Helvetica, sans-serif">&nbsp; 
+      </td>
+    <td rowspan="2" align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">add 
+      $1.25</td>
+  </tr>
+  <tr> 
+    <td align="left" valign="middle" bgcolor="#f4f4f4"> <input name="option" type="text" id="option" value="-- line 3 --"  maxlength="20"> 
+    </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" ><font size="1" face="Arial, Helvetica, sans-serif">Select 
+      a Font</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>---Select a Font---</option>
+        <option value="Selected Font/Diane Script">Diane Script</option>
+        <option value="Selected Font/Peco Block">Peco Block</option>
+        <option value="Selected Font/Full Block">Full Block</option>
+        <option value="Selected Font/Regular Script">Regular Script</option>
+        <option value="Selected Font/Old English">Old English</option>
+        <option value="Selected Font/Cut Block">Cut Block</option>
+        <option value="Selected Font/Brush Script">Brush Script</option>
+        <option value="Selected Font/Executive Script">Executive Script</option>
+        <option value="Selected Font/Zapf Chancery">Zapf Chancery</option>
+      </select>
+      </td>
+    <td align="center" valign="middle" ><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','../images/roll/view_fontsDwn.jpg',1)"><img src="../images/roll/view_fontsUp.jpg" name="Image3" width="180" height="26" border="0" onClick="MM_openBrWindow('fonts.html','','scrollbars=yes,width=500,height=450')"></a></td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" ><font size="1" face="Arial, Helvetica, sans-serif">Select 
+      a Color</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Thread Color--</option>
+        <option value="Thread Color/Purple">Purple</option>
+        <option value="Thread Color/Royal Blue">Royal Blue</option>
+        <option value="Thread Color/Kelly Green">Kelly Green</option>
+        <option value="Thread Color/Chrome Yellow">Chrome Yellow</option>
+        <option value="Thread Color/Bright Red">Bright Red</option>
+        <option value="Thread Color/Black">Black</option>
+        <option value="Thread Color/Postman Blue">Postman Blue</option>
+        <option value="Thread Color/Spruce Green">Spruce Green</option>
+        <option value="Thread Color/Teal">Teal</option>
+        <option value="Thread Color/Rust">Rust</option>
+        <option value="Thread Color/Chocolate">Chocolate</option>
+        <option value="Thread Color/Petrol Blue">Petrol Blue</option>
+        <option value="Thread Color/Light Green">Light Green</option>
+        <option value="Thread Color/Peach">Peach</option>
+        <option value="Thread Color/Salmon">Salmon</option>
+        <option value="Thread Color/Tan">Tan</option>
+        <option value="Thread Color/Hot Pink">Hot Pink</option>
+        <option value="Thread Color/White">White</option>
+        <option value="Thread Color/French Blue">French Blue</option>
+        <option value="Thread Color/Peacock">Peacock</option>
+        <option value="Thread Color/Lime Green">Lime Green</option>
+        <option value="Thread Color/Seville Orange">Seville Orange</option>
+        <option value="Thread Color/Khaki">Khaki</option>
+        <option value="Thread Color/Navy">Navy</option>
+        <option value="Thread Color/Olive Green">Olive Green</option>
+        <option value="Thread Color/Hunter Green">Hunter Green</option>
+        <option value="Thread Color/Bronze">Bronze</option>
+        <option value="Thread Color/Burgandy">Burgandy</option>
+        <option value="Thread Color/Charcoal">Charcoal</option>
+        <option value="Thread Color/Light Blue">Light Blue</option>
+        <option value="Thread Color/Aegean Blue">Aegean Blue</option>
+        <option value="Thread Color/Real Peach">Real Peach</option>
+        <option value="Thread Color/Fire Engine Red">Fire Engine Red</option>
+        <option value="Thread Color/Graphite">Graphite</option>
+        <option value="Thread Color/Light Pink">Light Pink</option>
+      </select>
+      </td>
+    <td width="23%" align="center" valign="middle" ><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','../images/roll/view_colorsDwn.jpg',1)"><img src="../images/roll/view_colorsUp.jpg" name="Image4" width="180" height="26" border="0" onClick="MM_openBrWindow('colors.html','','scrollbars=yes,width=550,height=450')"></a></td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" ><font size="1" face="Arial, Helvetica, sans-serif">Select 
+      a Location</td>
+    <td colspan="3" align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--- Select a Location---</option>
+        <option value="Embroidery Location/Left chest">Left chest</option>
+        <option value="Embroidery Location/Right chest">Right chest</option>
+        <option value="Embroidery Location/On left chest pocket">On left chest 
+        pocket</option>
+        <option value="Embroidery Location/Left shoulder on sleeve">Left shoulder 
+        on sleeve</option>
+        <option value="Embroidery Location/Right shoulder on sleeve">Right shoulder 
+        on sleeve</option>
+        <option value="Embroidery Location/On left cuff">On left cuff</option>
+        <option value="Embroidery Location/On right cuff">On right cuff</option>
+        <option value="Embroidery Location/Right collar">Right collar</option>
+        <option value="Embroidery Location/Left collar">Left collar</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td height="30" colspan="4" align="center" valign="middle" bgcolor="#CCCCCC"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Flag 
+      Embroidery</td>
+  </tr>
+  <tr> 
+    <td colspan="4" align="center" valign="middle" ><a href="#"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','../images/roll/view_flagsDwn.jpg',1)"><img src="../images/roll/view_flagsUp.jpg" name="Image2" width="180" height="26" border="0" onClick="MM_openBrWindow('flags.html','','scrollbars=yes,width=530,height=450')"></a></td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Right 
+      Collar</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Right Collar/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Right Collar/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Right Collar/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Right Collar/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Right Collar/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Right Collar/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Right Collar/France+$1.49">France</option>
+        <option value="Selected Flag/Right Collar/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Right Collar/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Right Collar/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Right Collar/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Right Collar/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Right Collar/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Right Collar/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Right Collar/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Right Collar/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Right Collar/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Right Collar/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Right Collar/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Right Collar/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Right Collar/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Right Collar/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Right Collar/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Right Collar/United States+$1.49">United 
+        States</option>
+      </select>
+      </td>
+    <td colspan="2" rowspan="2" align="left" valign="top" ><div align="center"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Add 
+        an embroidered flag to your garment<br>
+        for only $9.99 per flag.</div></td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Left 
+      Collar</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Left Collar/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Left Collar/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Left Collar/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Left Collar/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Left Collar/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Left Collar/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Left Collar/France+$1.49">France</option>
+        <option value="Selected Flag/Left Collar/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Left Collar/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Left Collar/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Left Collar/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Left Collar/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Left Collar/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Left Collar/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Left Collar/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Left Collar/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Left Collar/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Left Collar/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Left Collar/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Left Collar/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Left Collar/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Left Collar/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Left Collar/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Left Collar/United States+$1.49">United States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Left 
+      chest pocket</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Left Chest Pocket/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Left Chest Pocket/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Left Chest Pocket/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Left Chest Pocket/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Left Chest Pocket/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Left Chest Pocket/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Left Chest Pocket/France+$1.49">France</option>
+        <option value="Selected Flag/Left Chest Pocket/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Left Chest Pocket/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Left Chest Pocket/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Left Chest Pocket/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Left Chest Pocket/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Left Chest Pocket/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Left Chest Pocket/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Left Chest Pocket/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Left Chest Pocket/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Left Chest Pocket/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Left Chest Pocket/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Left Chest Pocket/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Left Chest Pocket/Puerto Rico+$1.49">Puerto 
+        Rico</option>
+        <option value="Selected Flag/Left Chest Pocket/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Left Chest Pocket/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Left Chest Pocket/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Left Chest Pocket/United States+$1.49">United 
+        States</option>
+      </select>
+      </td>
+    <td colspan="2" rowspan="7" align="center" valign="middle" ><img src="images/flag_example.jpg" width="215" height="161"></td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Left 
+      Shoulder on sleeve</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/France+$1.49">France</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Puerto Rico+$1.49">Puerto 
+        Rico</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Left Shoulder on Sleeve/United States+$1.49">United 
+        States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Right 
+      Shoulder on sleeve</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/France+$1.49">France</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Puerto Rico+$1.49">Puerto 
+        Rico</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Right Shoulder on Sleeve/United States+$1.49">United 
+        States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Let 
+      Cuff</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Left Cuff/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Left Cuff/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Left Cuff/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Left Cuff/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Left Cuff/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Left Cuff/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Left Cuff/France+$1.49">France</option>
+        <option value="Selected Flag/Left Cuff/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Left Cuff/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Left Cuff/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Left Cuff/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Left Cuff/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Left Cuff/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Left Cuff/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Left Cuff/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Left Cuff/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Left Cuff/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Left Cuff/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Left Cuff/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Left Cuff/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Left Cuff/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Left Cuff/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Left Cuff/United Kingdom+$1.49">United Kingdom</option>
+        <option value="Selected Flag/Left Cuff/United States+$1.49">United States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Right 
+      Cuff</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Right Cuff/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Right Cuff/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Right Cuff/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Right Cuff/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Right Cuff/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Right Cuff/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Right Cuff/France+$1.49">France</option>
+        <option value="Selected Flag/Right Cuff/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Right Cuff/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Right Cuff/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Right Cuff/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Right Cuff/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Right Cuff/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Right Cuff/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Right Cuff/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Right Cuff/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Right Cuff/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Right Cuff/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Right Cuff/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Right Cuff/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Right Cuff/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Right Cuff/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Right Cuff/United Kingdom+$1.49">United Kingdom</option>
+        <option value="Selected Flag/Right Cuff/United States+$1.49">United States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Right 
+      Chest</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Right Chest/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Right Chest/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Right Chest/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Right Chest/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Right Chest/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Right Chest/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Right Chest/France+$1.49">France</option>
+        <option value="Selected Flag/Right Chest/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Right Chest/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Right Chest/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Right Chest/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Right Chest/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Right Chest/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Right Chest/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Right Chest/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Right Chest/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Right Chest/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Right Chest/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Right Chest/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Right Chest/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Right Chest/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Right Chest/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Right Chest/United Kingdom+$1.49">United 
+        Kingdom</option>
+        <option value="Selected Flag/Right Chest/United States+$1.49">United States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" bgcolor="#f4f4f4"><font color="#000000" size="2" face="Arial, Helvetica, sans-serif">Left 
+      Chest</td>
+    <td align="left" valign="middle" ><font color="#000000" size="1" face="Arial, Helvetica, sans-serif"> 
+      <select name="option" size="1" id="option">
+        <option selected>--Select a Flag--</option>
+        <option value="Selected Flag/Left Chest/Argentina+$1.49">Argentina</option>
+        <option value="Selected Flag/Left Chest/Australia+$1.49">Australia</option>
+        <option value="Selected Flag/Left Chest/Belgium+$1.49">Belgium</option>
+        <option value="Selected Flag/Left Chest/Bermuda">Bermuda</option>
+        <option value="Selected Flag/Left Chest/Brazil+$1.49">Brazil</option>
+        <option value="Selected Flag/Left Chest/Canada+$1.49">Canada</option>
+        <option value="Selected Flag/Left Chest/France+$1.49">France</option>
+        <option value="Selected Flag/Left Chest/Germany+$1.49">Germany</option>
+        <option value="Selected Flag/Left Chest/Greece+$1.49">Greece</option>
+        <option value="Selected Flag/Left Chest/Hungary+$1.49">Hungary</option>
+        <option value="Selected Flag/Left Chest/Iceland+$1.49">Iceland</option>
+        <option value="Selected Flag/Left Chest/Ireland+$1.49">Ireland</option>
+        <option value="Selected Flag/Left Chest/Italy+$1.49">Italy</option>
+        <option value="Selected Flag/Left Chest/Jamaica+$1.49">Jamaica</option>
+        <option value="Selected Flag/Left Chest/Japan+$1.49">Japan</option>
+        <option value="Selected Flag/Left Chest/Luxembourg+$1.49">Luxembourg</option>
+        <option value="Selected Flag/Left Chest/Mali+$1.49">Mali</option>
+        <option value="Selected Flag/Left Chest/Mexico+$1.49">Mexico</option>
+        <option value="Selected Flag/Left Chest/Netherlands+$1.49">Netherlands</option>
+        <option value="Selected Flag/Left Chest/Puerto Rico+$1.49">Puerto Rico</option>
+        <option value="Selected Flag/Left Chest/Sweden+$1.49">Sweden</option>
+        <option value="Selected Flag/Left Chest/Switzerland+$1.49">Switzerland</option>
+        <option value="Selected Flag/Left Chest/United Kingdom+$1.49">United Kingdom</option>
+        <option value="Selected Flag/United States+$1.49">United States</option>
+      </select>
+      </td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle" >&nbsp;</td>
+    <td align="left" valign="middle" >&nbsp;</td>
+    <td colspan="2" align="center" valign="middle" ><font size="2" face="Arial, Helvetica, sans-serif"><em>Flag 
+      Examples Above</em></td>
+  </tr>
+  <tr > 
+    <td colspan="4" align="center" valign="middle"><font size="2" face="Arial, Helvetica, sans-serif"><font color="#000000">Custom 
+      Logo Embroidery <font color="#000000"><br>
+      Create a personalized and professional look with a custom embroidered logo 
+      by <br>
+      calling eChefX toll free at 1-800-587-9107</td>
+  </tr>
+  <tr> 
+    <td align="center" valign="middle">&nbsp;</td>
+    <td colspan="2" align="center" valign="middle"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','../images/roll/fabric_careDwn.jpg',1)"><img src="../images/roll/fabric_careUP.jpg" name="Image5" width="180" height="26" border="0" onClick="MM_openBrWindow('../_washing/index.html','','scrollbars=yes,width=525,height=480')"></a></td>
+    <td align="left" valign="middle">&nbsp;</td>
+  </tr>
+</table>

@@ -1,0 +1,526 @@
+$hundred_percent_height: 100%;
+$hundred_percent: 100%;
+
+
+// -- Cell sizes Breakpoints
+
+$small_cell_phone: 320px;
+$expanded_cell_phone: 320px;
+
+$small_cell_tablet: 305px;
+$expanded_cell_tablet: 620px;
+
+$small_cell_desktop: 300px;
+$expanded_cell_desktop: 620px;
+
+
+// -------- EXTEND FOR BODY SHEET
+
+%radius_5 {
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+
+// ------------------------------------------------------ Item
+
+html {
+ overflow-y: scroll;
+ margin-bottom: 0.01em;
+ height: $hundred_percent_height;
+}
+
+html, body, div, span, object, iframe, x h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+	min-height: $hundred_percent_height;
+	word-wrap: break-word;
+}
+
+// Custom Clear Fix -- Use the @extend %clearfix; to add it to other classes if needed
+
+.clearfix {
+	display: block;
+	clear: both;
+	overflow: none;
+	height: 0;
+	content: ".";
+	//visibility: hidden;
+	*zoom: 1;
+}
+
+.iso_container,
+#content,
+.isotope {
+	margin: 0 auto;
+}
+
+#content {
+	padding: 0 0 100px 0;
+}
+
+.items {
+	//margin-left: -20px
+}
+
+
+
+// ------------ Systems Body Start
+
+.wrapper {
+	width: 100%;
+	height: $hundred_percent_height;
+}
+
+.summary {
+	font-size: 16px;
+	line-height: 133%;
+}
+
+.padding_15 {
+	padding: 15px 0 15px 15px;
+}
+
+// ------------------------------------------------------ Tabs Start
+
+.tab-content {
+	position: relative;
+	z-index: 10;
+	display: inline-block;
+	margin: 20px 40px 0;
+
+	.tab_content_left {
+		display: block;
+		float: left;
+		width: 68%;
+	}
+
+	.tab_content_right {
+		display: block;
+		float: right;
+		width: 28%;
+
+		.systems_messaging_col {
+			padding: 0 0 15px 0;
+
+			ul {
+				margin: 0 0 0 15px;
+			}
+		}
+
+		.systems_messaging_col_last {
+			ul {
+				margin: 0 0 0 15px;
+			}
+		}
+	}
+
+	h2 {
+	 margin: 0 0 10px 0;
+	}
+
+	h3 {
+		margin: 0 0 10px 0;
+	}
+
+	p {
+		margin: 0 0 10px 0;
+	}
+
+	.systems_sub_filter_copy {
+
+		.see_more {
+			position: absolute;
+			width: $hundred_percent;
+			height: 5px;
+			background: #E2E2E2;
+
+			a {
+				display: block;
+				margin: 0 auto;
+				width: 30px;
+				height: 22px;
+				background: url(../images/see_more.png) no-repeat;
+				text-indent: -2500px;
+			}
+		}
+	} // ------------ Container END
+}
+
+
+// ------------------------------------------------------ ISO Container
+#content { height: auto; }
+
+.iso_container {
+	clear: both;
+	padding: 0;
+	width: 100%;
+	height: $hundred_percent;
+	border: none;
+	color: #464646;
+	margin-bottom: 50px;
+
+	#content { height: auto; }
+
+	.read_more_wrapper {
+// ----- No sectors here... just nesting to focus on the child class
+
+		.tab_content_wrapper {
+			overflow: hidden;
+			height: 100px;
+		}
+	}
+
+	.iso_selector {
+	  position: relative;
+	  float: left;
+	  margin: 0 0 20px 0;
+	  //margin: 0 0 20px 20px;
+	  //-webkit-border-radius: 3px;
+	  //-moz-border-radius: 3px;
+	  //border-radius: 3px;
+	  //background-color: white;
+	  //-ms-border-radius: 3px;
+	  //-o-border-radius: 3px
+	 }
+
+	.isotope,
+	.isotope .iso_item {
+	  -webkit-transition-duration: 0.8s;
+	  -moz-transition-duration: 0.8s;
+	  -o-transition-duration: 0.8s;
+	  transition-duration: 0.8s;
+	}
+
+	.isotope {
+	  -webkit-transition-property: height, width;
+	  -moz-transition-property: height, width;
+	  -o-transition-property: height, width;
+	  transition-property: height, width;
+	}
+
+	.isotope .iso_item {
+	  -webkit-transition-property: -webkit-transform, opacity;
+	  -moz-transition-property: -moz-transform, opacity;
+	  -o-transition-property: top, left, opacity;
+	  transition-property: transform, opacity;
+	}
+
+	.isotope.no-transition,
+	.isotope.no-transition .iso_item,
+	.isotope .iso_item.no-transition {
+	  -webkit-transition-duration: 0s;
+	  -moz-transition-duration: 0s;
+	  -o-transition-duration: 0s;
+	  transition-duration: 0s;
+	}
+
+	.isotope .iso-item {
+		-webkit-transition-duration: 0.8s;
+		-moz-transition-duration: 0.8s;
+		transition-duration: 0.8s;
+		-webkit-transition-property: -webkit-transform, opacity;
+		-moz-transition-property: -moz-transform, opacity;
+		transition-property: transform, opacity;
+	}
+}
+
+
+
+// ------------------------------------------------------ Margins / Paddings / / Floats Links
+
+#tabs1 > .all {
+	margin: 0 0 30px 0;
+	width: $hundred_percent;
+	height: auto;
+}
+
+.filter-wrap {
+  clear: both;
+  margin-bottom: 18px;
+  height: 45px;
+}
+
+//------- Delete before go live.
+
+p {line-height: 16px;}
+
+small {
+	display: block;
+	float: left;
+	padding: 0 0 10px 0;
+	width: 99%;
+}
+
+
+
+
+// ------------------------------------------------------ ISO Cell - Contents
+
+section {
+	margin-top: 0;
+
+	iframe {
+		padding: 15px 0 15px 0;
+		width: 1055;
+	}
+
+	h3 {
+		padding: 15px 0 15px 0;
+	}
+
+	h4 {
+		padding: 0 0 15px 0;
+	}
+
+	ul {
+		padding: 0 0 15px 0;
+	}
+
+	.btn {
+		margin: 0 0 30px 0;
+	}
+
+	fieldset {
+    border-width: 0.16667em;
+    border-style: solid;
+    padding: 20px 20px 10px 20px;
+    border-color: #eaeaea;
+    margin: 0 0;
+
+    legend {
+      padding: 5px 10px;
+    }
+  }
+
+ .small {
+		display: block;
+
+		p {
+			font-size: 12px;
+
+			span {
+				font-weight: bold;
+			}
+		}
+
+		a {
+
+		}
+
+		ul {
+			font-size: 12px;
+			font-weight: bold;
+			margin: 0;
+
+			li {
+				font-size: 12px;
+				font-weight: normal;
+				margin: 0 0 0 24px;
+				line-height: 20px;
+			}
+
+			li:last-child {
+				//margin: 0 0 20px 24px;
+			}
+
+			span {
+				//margin: 0 0 20px 0;
+			}
+		}
+	}
+
+ dl {
+		margin: 0 0 20px 0;
+	 padding: 0 17px 0 17px;
+
+		dt {
+			margin: 0 5px 0px 0;
+			padding: 0;
+			font-weight: bold;
+		}
+
+		dd {
+			margin: 0 20px 10px 20px;
+			padding: 0;
+		}
+	}
+
+	.systems_pdf_link {
+	 display: table;
+	 padding: 0 17px 0 17px;
+	 width: 425px;
+	 }
+
+	a.graphical_link {
+		display: block;
+		float: left;
+		clear: both;
+		overflow: hidden;
+		margin: 0 0 10px 0;
+		padding: 4px 0 0 0;
+		width: $hundred_percent;
+		height: 21px;
+		background: url(../images/back_download_right.gif) no-repeat right 0;
+		color: #fff !important;
+		text-align: left;
+		text-decoration: none !important;
+		cursor: pointer;
+	}
+
+	a.graphical_link span {
+		position: relative;
+		top: -4px;
+		display: block;
+		float: left;
+		width: 21px;
+		height: 25px;
+		background: url(../images/back_download_left.gif) no-repeat left 0;
+		text-decoration: none !important;
+		text-indent: -10000px;
+		cursor: pointer;
+	}
+
+ .text_learn_more {
+		display: inline-block;
+		clear: left;
+		padding-left: 11px;
+		background: url(http://c294914.r14.cf1.rackcdn.com/back_black_arrow_right.gif) no-repeat 1px 5px;
+		color: #326295;
+		text-decoration: none;
+		font-weight: normal;
+		cursor: pointer;
+	}
+}
+
+
+// ------------------------------------------------------ ISO Cell - Color Borders when expanded
+
+article.category_01 section {
+	border-right: #AF2171 1px solid;
+	border-left: #AF2171 1px solid;
+}
+
+article.category_02 section {
+	border-right: $blue_accent 1px solid;
+	border-left: $blue_accent 1px solid;
+}
+
+article.category_03 section {
+	border-right: #CF4520 1px solid;
+	border-left: #CF4520 1px solid;
+}
+
+article.category_04 section {
+	border-right: #0093B2 1px solid;
+	border-left: #0093B2 1px solid;
+}
+
+article.category_05 section {
+	border-right: #F4AB23 1px solid;
+	border-left: #F4AB23 1px solid;
+}
+
+article.category_06 section {
+	border-right: $green 1px solid;
+	border-left: $green 1px solid;
+}
+
+// ------------------------------------------------------ HEADER
+
+
+.nav_sticky {
+    position: fixed;
+    //text-align: center;
+    //line-height: 108px;
+    height: 36px;
+    width: 100%;
+    background: #999;
+    color: #fff;
+    z-index: 120;
+    top: 50px;
+}
+
+// ------------------------------------------------------ BODY
+
+[data-target="body"] {
+
+	.testimonial {
+		height: auto;
+	}
+}
+
+
+// ------------------------------------------------------ FOOTER
+
+[data-target="footer"] {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 39px;
+	z-index: 200;
+	opacity: .8;
+	background: #EDECDA;
+
+	.footer_icons {
+		width: 355px;
+		height: 39px;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+
+		a {
+			border: none;
+			float: left;
+			display: block;
+			width: 177px;
+			height: 39px;
+
+			img {
+				opacity: 1;
+				display: block;
+
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+
+			p {
+				display: none;
+			}
+		}
+
+		a:first-child {
+			display: none;
+
+			width: 162px;
+			height: 39px;
+		}
+	}
+
+	@media all and (min-width: 320px) and (max-width: 600px) {
+		img {
+			display: none;
+		}
+
+		p {
+			display: block;
+		}
+
+		.row {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+

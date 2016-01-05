@@ -1,49 +1,482 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"><!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<!--[if IE]><![endif]-->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
-	<meta name="description" content="">
+	<!-- General META Setup & Fixes -->
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Title -->
+	<title>a 9th Elevation Company | Interactive Design</title>
+
+	<!-- SEO META Setup -->
+	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-	<!-- !CSS -->
-	<link rel="stylesheet" href="css/style.css?v=1">
-	<!-- Uncomment if you are specifically targeting less enabled mobile browsers
-	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=1">  -->
-	<!-- !Modernizr - All other JS at bottom -->
-	<script src="js/modernizr-1.5.min.js"></script>
+
+	<!-- Icons -->
+	<link href="http://media.igt.com/images_2013/fav-touch-icons/apple-touch-icon-57x57-precomposed.png" rel="apple-touch-icon-precomposed" sizes="57x57" type="image/png"/>
+	<link href="http://media.igt.com/images_2013/fav-touch-icons/apple-touch-icon-72x72-precomposed.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png"/>
+	<link href="http://media.igt.com/images_2013/fav-touch-icons/apple-touch-icon-114x114-precomposed.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png"/>
+	<link href="http://media.igt.com/images_2013/fav-touch-icons/apple-touch-icon-144x144-precomposed.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png"/>
+
+	<!-- FAV -->
+	<link rel="shortcut icon" href="http://9thelevation.com/ico.ico" type="image/vnd.microsoft.icon"/>
+	<link rel="icon" href="http://9thelevation.com/ico.ico" type="image/vnd.microsoft.icon"/>
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+	<!-- Stylesheet -->
+	<link href="css/global_9th.css?v=9" media="all" rel="stylesheet" type="text/css" />
+
+	<!-- Modernizr -->
+	<script src="js/libs/modernizr-2.6.2.min.js"></script>
+
+	<!-- jQuery -->
+	<script>
+		var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+			if(!oldieCheck) {
+		document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"><\/script>');
+			} else {
+			document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+		}
+	</script>
+
+	<!-- Gumby -->
+	<!-- <script src="bower_components/gumby/js/libs/gumby.min.js" type="text/javascript"></script> -->
+
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+		var element = document.createElement("script");
+			element.src = "bower_components/gumby/js/libs/gumby.min.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
+
+	<!-- Isotope -->
+	<script type="text/javascript" src="bower_components/isotope/js/isotope.js"></script>
+	<script type="text/javascript" src="js/9th-isotope.js"></script>
+	<script type="text/javascript" src="js/9th-custom.js"></script>
+	<script type="text/javascript" src="js/isotope-centered-masonry-and-masonry-gutters.js"></script>
+
+	<!-- Header resize / On load, move body down -->
+	<script type="text/javascript" src="js/9th_custom_plugins.js"></script>
+
+	<!-- HTML5 SHIV -->
+	<!--[if IE]><script src="bower_components/html5shiv/dist/html5shiv.min.js"></script><![endif]-->
+
 </head>
-<!-- !Body -->
-<body>
-	<div id="container">
-		<header>
-			<ul id="nav">
-				<li><a href="#nowhere" title="Home">Nav1</a></li>
-				<li><a href="#nowhere" title="About">Nav2</a></li>
-				<li><a href="#nowhere" title="Services">Nav3</a></li>
-				<li><a href="#nowhere" title="Contact">Nav4</a></li>
-				<li><a href="#nowhere" title="Pellentesque">Nav5</a></li>
-				<li><a href="#nowhere" title="Aliquam">Nav677</a></li>
-				<li><a href="#nowhere" title="Morbi">Nav99</a></li>
-			</ul><!-- /#nav  -->
-		</header><!-- /header -->		
-		<section id="main">		
-		</section><!-- /main -->		   
-		<footer>
-		</footer><!-- /footer -->
-	</div><!--!/#container -->
-	<!-- !Javascript - at the bottom for fast page loading -->
-	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script>!window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')</script>
-	<script src="js/plugins.js?v=1"></script>
-	<script src="js/script.js?v=1"></script>
-</body>
+  <body data-index="one-page">
+      <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header" class="content" data-target="header">
+	        <div class="row row_alt">
+		        <div id="logo" class="twelve columns"><h1><span>a</span> 9th Elevation Company</h1></div>
+
+						<!-- NAV Container -->
+						<div class="navbar clearfix">
+							<div class="top_tabs_wrapper systems_sub_filter_wrapper nav">
+
+								<ul class='top_tabs' id="menubars1">
+									<li><a href='#/services/all_services' data-rel="menubars2" data-id="services">Innovative Solutions</a></li>
+									<li><a href='#/casino_role/all_casino_role' data-rel="menubars3" data-id="casino_role">Maximize Your Operations</a></li>
+								</ul>
+
+								<div class="filter_navigation_wrapper">
+									<!-- services NAV Container -->
+									<section onclick="event.stopPropagation();" class="filter_navigation sub_tabs_filter" style="display: none" id="menubars2">
+
+										<nav id="primary_nav" class="filter one">
+										 <ul class="sub_tabs">
+										  <li><a href="#/services/all_services" data-rel="tabs1" data-id="all_services" data-sort="name" class="first">ALL<span></span></a></li>
+										  <li><a href="#/services/category_01" data-rel="tabs2" data-id="category_01">Brand<span></span></a></li>
+										  <li><a href="#/services/category_02" data-rel="tabs3" data-id="category_02" data-filter=".category_02">Web<span></span></a></li>
+										  <li><a href="#/services/category_03" data-rel="tabs4" data-id="category_03">Mobile<span></span></a></li>
+										  <li><a href="#/services/category_04" data-rel="tabs5" data-id="category_04">Print<span></span></a></li>
+										  <li><a href="#/services/category_05" data-rel="tabs6" data-id="category_05">"Word"<span></span></a></li>
+										  <li><a href="#/services/category_06" data-rel="tabs7" data-id="category_06">Awards - Honors<span></span></a></li>
+										  <li><a href="#">Login<span></span></a></li>
+										 </ul>
+										</nav>
+
+										<!-- Mobile Nav -->
+										<div id="mobile_button" class="mobile_menu_icon">
+										  <i class="fa fa-bars"></i>
+										</div>
+										<nav id="mobile_nav" class="filter one">
+										 <ul class="mobile_nav_list">
+										  <li><a href="#/services/all_services" data-rel="tabs1" data-id="all_services" data-sort="name" class="first">ALL</a></li>
+										  <li><a href="#/services/category_01" data-rel="tabs2" data-id="category_01">Brand</a></li>
+										  <li><a href="#/services/category_02" data-rel="tabs3" data-id="category_02" data-filter=".category_02">Web</a></li>
+										  <li><a href="#/services/category_03" data-rel="tabs4" data-id="category_03">Mobile</a></li>
+										  <li><a href="#/services/category_04" data-rel="tabs5" data-id="category_04">Print</a></li>
+										  <li><a href="#/services/category_05" data-rel="tabs6" data-id="category_05">"Word"</a></li>
+										  <li><a href="#/services/category_06" data-rel="tabs7" data-id="category_06">Awards - Honors</a></li>
+										  <li><a href="#">Login<span></span></a></li>
+										 </ul>
+										</nav>
+
+										<div class="clearfix"></div>
+									</section>
+
+									<!--  Roles NAV Container -->
+									<section onclick="event.stopPropagation();" class="systems_sub_filter_navigation sub_tabs_filter" id="menubars3" style="display: none">
+										<nav class="filter one">
+											<ul class="sub_tabs">
+												<li><a href="#/casino_role/all_casino_role" data-rel="tabs8" data-id="all_casino_role" class="first">ALL<span></span></a></li>
+												<li><a href="#/casino_role/gaming_ops" data-rel="tabs9" data-id="gaming_ops" class="tab9">Optimize Your Floor<span></span></a></li>
+												<li><a href="#/casino_role/marketing" data-rel="tabs10" data-id="marketing" class="tab10">Market Your Offerings<span></span></a></li>
+												<li><a href="#/casino_role/finance" data-rel="tabs11" data-id="finance" class="tab11">Manage Your Accounting<span></span></a></li>
+												<li><a href="#/casino_role/it" data-rel="tabs12" data-id="it" class="tab12">Support Your Technology<span></span></a></li>
+											</ul>
+										</nav>
+										<div class="clearfix"></div>
+									</section>
+
+								</div>
+							</div>
+						</div>
+
+        	</div>
+        </header>
+
+        <!-- body -->
+        <div id="body" class="content row" data-target="body">
+	        <div class="wrapper twelve columns">
+
+
+						<!-- isoTope  -->
+
+						<section onclick="event.stopPropagation();" class="iso_container">
+					 		<div class="items isotope" style="display: none">
+
+					 		<!-- 01 category_01 - Brand -->
+								<!-- Fresh Energy Bakery -->
+								<article class="type-information iso_selector iso_small_style iso_item category_01" data-id="category_01_brand">
+									<header class="clearfix cell_title">
+										<h3>Fresh Energy Bakery 2</h3>
+										<div class="header_catagory">Brand</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Cell Title</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_01_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- 02 category_02 - Web / Commerce -->
+								<!-- Fresh Energy Bakery -->
+								<article class="type-information iso_selector iso_small_style iso_item category_02" data-id="category_02_web">
+									<header class="clearfix cell_title">
+										<h3>Fresh Energy Bakery</h3>
+										<div class="header_catagory">Web / Commerce</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Cell Title</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_02_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- IGT Holiday 2014 -->
+								<article class="type-information iso_selector iso_small_style iso_item category_02" data-id="category_04_web">
+									<header class="clearfix cell_title">
+										<h3>Happy Holidays 2014 - IGT</h3>
+										<div class="header_catagory">Web</div>
+									</header>
+
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>IGT Happy Holidays 2014</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<!-- Modal -->
+										<div class="medium primary btn">
+											<a href="http://abc.com">Project Link</a>
+										</div>
+
+										<fieldset>
+										  <legend>Details</legend>
+
+											<div class="small">
+												<p><span>Project</span>: Global Holiday Communication</p>
+												<p><span>Client</span>: IGT - International Game Technology</p>
+												<p><span>Deliverable</span>: Webpage</p>
+												<p><span>Expertise</span>: Interactive</p>
+
+												<ul>Production Crew:
+													<li>Brent Wuest (design, html, CSS, front-end development)</li>
+													<li>Greg Cotterman (development)</li>
+													<li>Greg Wostol (video)</li>
+												</ul>
+
+												<ul class="ten columns">Technology:
+													<span class="success label">HTML</span>
+													<span class="success label">CSS3 / Sass</span>
+													<span class="success label">jQuery</span>
+												</ul>
+											</div>
+										</fieldset>
+										<div class="clearfix"></div>
+									</section>
+
+									<footer class="footer_close category_02_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- Bam Fitness -->
+								<article class="type-information iso_selector iso_small_style iso_item category_02" data-id="category_03_web">
+									<header class="clearfix cell_title">
+										<h3>Bam Fitness</h3>
+										<div class="header_catagory">Web / Commerce</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Bam Fitness</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_02_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- 03 category_03 - Mobile -->
+								<article class="type-information iso_selector iso_small_style iso_item category_03" data-id="category_03_mobile">
+									<header class="clearfix cell_title">
+										<h3>Mega Jackpots - IGT</h3>
+										<div class="header_catagory">Mobile</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Mega Jackpots - IGT</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_03_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- 04 category_04 - Print -->
+								<article class="type-information iso_selector iso_small_style iso_item category_04" data-id="category_04_print">
+									<header class="clearfix cell_title">
+										<h3>Bill Pearce Porsche</h3>
+										<div class="header_catagory">Print</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Bill Pearce Porsche</h3>
+										<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_04_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<!-- 01 category_05 Testimonials -->
+							  <article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_01_testimonial">
+								  <blockquote>
+										<p>"Brent is the consummate professional. He knows his business well and works hard to make sure any project succeeds. He always has great suggestions to augment existing ideas, making the project even better. And Brent cares about the end result. He goes the extra mile to be certain the client is happy, and the project succeeds. He follows up and helps with marketing. He provides a range of services from concept, Web design and programming, and Internet marketing. And he is incredibly fun to work with! I highly recommend his services."</p>
+										<div class="testinonial_person">
+										 <cite>- Lenora Carey<span class="cite_property">Bravo Media / 1800FatFree.com / iVoiceOver.com</span><span class="cite_location">San Fransico, CA - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="adv_footer_catagory"></div>	-->
+								</article>
+
+							  <article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_02_testimonial">
+								 <blockquote>
+										<p>"I have been working with Brent for many years. He has been overseeing the IT for my company, Creative Specialty Apparel, Inc. The experience has been excellent."</p>
+										<div class="testinonial_person">
+										 <cite>- Judy Anderson<span class="cite_property">Creative Specialty Apparel</span><span class="cite_location">Reno, NV - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="adv_footer_catagory"></div>	-->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_03_testimonial">
+								 <blockquote>
+										<p>"Brent is a very dedicated graphic design artist, Website developer, Video co-creator & producer, and very good at brainstorming ideas, prioritizing them, and acting upon them thereby producing great advertising results. He has patience with those that do not know as much as he does and gives good instruction and guidance along the way. He has been an asset to our company through our advertising relationship for 4 years."</p>
+										<div class="testinonial_person">
+										 <cite>- Kathy Kaufman<span class="cite_property">Public Restroom Company</span><span class="cite_location">Reno, NV - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_04_testimonial">
+								 <blockquote>
+										<p>"Brent is a very professional individual who conducts himself with integrity, honesty and fairness. He is very competent in the service he and his company provides."</p>
+										<div class="testinonial_person">
+										 <cite>- Sheila Solari<span class="cite_property">First Class Roses</span><span class="cite_location">Reno, NV - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_05_testimonial">
+								 <blockquote>
+										<p>"a 9th Elevation has been a crucial part of my business for the past 6-7 yrs. Being a photographer, I need to have a strong web presence and prompt attention with updates to my website. 9th elevation has accomplished both for me, and continues to do so. I would highly recommend using their services to produce quality websites and marketing solutions for your business.”</p>
+										<div class="testinonial_person">
+										 <cite>- Shannon Henry<span class="cite_property">Studio Carré Photographie</span><span class="cite_location">San Diego, CA - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_06_testimonial">
+								 <blockquote>
+										<p>“Ivoiceover.com site design and function couldn't be better!  Everyone who sees it loves it.  Thanks again for all your effort.  All the behind the scenes work you did really pays off.  I dare anyone to find a better, more interactive commercial voiceover website.  Can't be done.”</p>
+										<div class="testinonial_person">
+										 <cite>- Richard Gebhardt<span class="cite_property">ABC Channel 7</span><span class="cite_location">San Francisco, CA - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_07_testimonial">
+								 <blockquote>
+										<p>“WOW, You have done it!  Sean John meets Armani... a 9th Elevation Company exceeded the creativity level of how to tell our company story. A great media, marketing tool!”</p>
+										<div class="testinonial_person">
+										 <cite>- Gil Gardner<span class="cite_property">Xavier & Lords / eChefX</span><span class="cite_location">Las Vegas, NV - USA</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+								<article class="type-information iso_selector iso_long_style iso_item testimonial category_01_testinonial_color category_05" data-id="category_08_testimonial">
+								 <blockquote>
+										<p>“Thanks Again! Amazing work. I look forward to working with you again in the future.”</p>
+										<div class="testinonial_person">
+										 <cite>- Matt Yocum<span class="cite_property">Marvel Comics</span><span class="cite_location">Isreal</span></cite>
+										</div>
+									</blockquote>
+									<!-- <div class="cl_footer_catagory"></div> -->
+								</article>
+
+							  <!-- 06 category_06 - Awards-Honors -->
+								<article class="type-information iso_selector iso_small_style iso_item category_06" data-id="category_01_awards">
+									<header class="clearfix cell_title">
+										<h3>2014 - Gaming Voice Awards</h3>
+										<div class="header_catagory">Awards and Honors</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Best Annual Report</h3>
+										<p>“Best Annual Report” in American Gaming Association</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_06_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<article class="type-information iso_selector iso_small_style iso_item category_06" data-id="category_02_awards">
+									<header class="clearfix cell_title">
+										<h3>2014 - ADDY Awards</h3>
+										<div class="header_catagory">Awards and Honors</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Online / Website</h3>
+										<p>Gold - Corporate Website</p>
+										<p>Silver - Online Annual Report</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_06_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<article class="type-information iso_selector iso_small_style iso_item category_06" data-id="category_03_awards">
+									<header class="clearfix cell_title">
+										<h3>2013 - Gaming Voice Awards</h3>
+										<div class="header_catagory">Awards and Honors</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>Best Annual Report</h3>
+										<p>“Best Annual Report” in American Gaming Association</p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_06_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+								<article class="type-information iso_selector iso_small_style iso_item category_06" data-id="category_04_awards">
+									<header class="clearfix cell_title">
+										<h3>2013 - The Wall Street Journal</h3>
+										<div class="header_catagory">Awards and Honors</div>
+									</header>
+									<section onclick="event.stopPropagation();" class="cell_content">
+										<h3>The Wall Street Journal</h3>
+										<p>- IGT Wins American Gaming Association's "Voice Communications Award" for Industry's First Interactive Annual Report </p>
+										<div class="clearfix"></div>
+									</section>
+									<footer class="footer_close category_06_color">
+										<div class="footer_open close_button"><a href="#"></a></div>
+									</footer>
+								</article>
+
+							</div>
+							<div class="clearfix"></div>
+						</section>
+
+						<!-- isoTope End -->
+
+					</div>
+        </div>
+
+        <!-- footer -->
+        <div class="content" data-target="footer">
+	        	<div class="row">
+			        <div class="twelve columns">
+			        	<div class="footer_icons">
+				        	<a href="http://www.9thelevation.com/">
+					        	<img src="images/icons/9th.png" alt="9th Elevation Company" width="162" height="39">
+					        	<p>a 9th Elevation Company</p>
+					        </a>
+					        <a href="http://www.bigreply.com/" target="_blank">
+						        <img src="images/icons/br.png" alt="Big Reply" width="177" height="39">
+						        <p>Big Reply</p>
+						      </a>
+						      <a href="http://www.ninthcommerce.com/" target="_blank">
+							      <img src="images/icons/ninth.png" alt="a Ninth Commerce Group" width="177" height="39">
+							      <p>a Ninth Commerce Group</p>
+						      </a>
+			        	</div>
+			        </div>
+	        	</div>
+        </div>
+
+
+      </div><!-- //END .main_wrapper -->
+
+      <!-- All Modals -->
+
+
+
+
+			<!-- SCRIPTS -->
+			<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+			<script type="text/javascript" src="js/9th-isotope.js"></script>
+			<script type="text/javascript" src="js/9th-custom.js"></script>
+
+      <!-- Needed for Videos to be responsive -->
+      <script src="js/jquery.fitvids.js" type="text/javascript"></script>
+
+      <!--[if lt IE 9]><script src="igt-site/js/respond.src.js"></script><![endif]-->
+
+  </body>
 </html>

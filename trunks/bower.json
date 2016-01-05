@@ -1,0 +1,11 @@
+{
+  "name": "gumby",
+  "version": "2.6.3",
+  "main": [
+    "./js/libs/gumby.min.js",
+    "./css/gumby.css"
+  ],
+  "dependencies": {
+    "gumby": "~2.6.4"
+  }
+}

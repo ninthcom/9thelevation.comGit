@@ -1,0 +1,19 @@
+{
+  "name": "zurb foundation 5 bower",
+  "description": "foundation 5 v. 5.2.0",
+  "main": [
+    "css/foundation.css",
+    "js/foundation.js"
+  ],
+  "homepage": "https://github.com/JDillon522/zurb-foundation-bower",
+  "_release": "fa7312821a",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "fa7312821af9990a3b1aed977e79f12c7088cbac"
+  },
+  "_source": "git://github.com/JDillon522/zurb-foundation-bower.git",
+  "_target": "*",
+  "_originalSource": "zurb-foundation-bower",
+  "_direct": true
+}

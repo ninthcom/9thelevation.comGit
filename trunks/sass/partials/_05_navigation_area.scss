@@ -1,0 +1,955 @@
+%arrow {
+	top: 6px;
+	left: 58px;
+	width: 60px;
+	height: 40px;
+}
+
+// ------------------ Systems Filter Bar
+
+.systems_tabs_set_height {
+	overflow: hidden;
+	margin: 0;
+	width: 940px;
+
+	.systems_sub_filter_copy_container {
+
+		h3 {
+			display: inline-block;
+			width: 99%;
+		}
+
+		.systems_messaging_col {
+			display: inline-block;
+			float: left;
+			padding: 0 20px 15px 0;
+			width: 283px;
+			height: auto;
+
+			ul {
+				margin: 0 0 0 20px;
+			}
+	 	}
+
+	 	.systems_messaging_col_last {
+			display: inline-block;
+			float: left;
+			padding: 0 0 15px 0;
+			width: 283px;
+			height: auto;
+
+			ul {
+				margin: 0 0 0 20px;
+			}
+	 	}
+	}
+}
+
+.see_more {
+	position: relative;
+	top: 0;
+	z-index: 1000;
+	border-top: $gray_light_2 3px solid;
+
+	a {
+		display: block;
+		margin: 0 auto;
+		width: 30px;
+		height: 22px;
+		text-indent: -2500px;
+	}
+
+	.see_more_down {
+		display: block;
+		margin: 0 auto;
+		width: 30px;
+		height: 22px;
+		background: url(../images/see_more.png) no-repeat;
+		text-indent: -2500px;
+	}
+
+	.see_less_up {
+		display: block;
+		margin: 0 auto;
+		width: 30px;
+		height: 22px;
+		background: url(../images/see_less.png) no-repeat;
+		text-indent: -2500px;
+	}
+}
+
+.systems_filter_copy {
+	 width: 940px;
+  height: auto;
+
+	.systems_filter_copy_container {
+		overflow: hidden;
+		padding: 0 15px 15px 15px;
+		width: 910px;
+
+		.systems_text_background {
+			width: 910px;
+			height: $hundred_percent;
+			background: $gray;
+
+			.systems_text_container {
+				display: inline-table;
+				padding: 15px 15px 0 15px;
+				width: 880px;
+				height: $hundred_percent;
+				color: $white;
+			 }
+
+			.col_pipe {
+				display: inline-block;
+				float: left;
+				box-sizing: border-box;
+				margin: 68px 10px 0 0;
+				min-height: $hundred_percent;
+				width: 10px;
+				border-right: $gray_light_2 2px solid;
+			}
+
+			.systems_messaging_col {
+			 display: inline-block;
+			 float: left;
+			 width: 280px;
+			 height: auto;
+			}
+		}
+	}
+}
+
+.collapse_secondary_nav_wrapper {
+	float: left;
+	margin: 0 auto;
+	width: $hundred_percent;
+	height: 22px;
+
+	 a {
+	  display: block;
+			padding: 6px 0 0 0;
+			width: $hundred_percent;
+			height: 16px;
+			background: $nav_background;
+
+	  .collapse_secondary_nav {
+	   display: block;
+	   margin: 0 auto;
+	   width: 30px;
+	   height: 22px;
+	   background: url(../images/systems_close_cell.png) no-repeat transparent;
+	   text-indent: -2500px;
+	  }
+
+	  &:hover {
+	   //background: #6E7D88;
+	  }
+	 }
+	}
+
+// ------------------ Systems Second Filter Bar
+
+
+.see_more_fade {
+	position: absolute;
+	top: -23px;
+	width: 940px;
+	height: 20px;
+	background: url(../images/see_more_fade.png) transparent no-repeat;
+}
+
+// ---------------- CLASS --- systems_wrapper end
+
+// ------------------------------------------------------ EXTENT THESE CLASS SECTORS
+
+%cell_h_and_w {
+	width: $hundred_percent;
+	height: 141px;
+}
+
+%cell_background_active {
+	position: relative;
+	top: 93px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 156px;
+	height: 27px;
+	color: $medium_grey;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+%cell_background_hover {
+	position: relative;
+	top: 93px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 156px;
+	height: 27px;
+	color: $white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+%cell_background_selected {
+	position: relative;
+	top: 93px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 156px;
+	height: 27px;
+	color: $white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+%cell_background_selected_arrow {
+	position: relative;
+	top: 16px;
+	left: -9px;
+	display: block;
+	width: $four_filter_width;
+	height: 3px;
+	border-bottom: $gray 3px solid;
+}
+
+%filter_cell_sector {
+	display: block;
+	float: left;
+	width: $four_filter_width;
+	height: 140px;
+}
+
+%filter_cell_sector_hover {
+	position: relative;
+	top: 16px;
+	left: -9px;
+	display: block;
+	height: 3px;
+}
+
+
+
+// ------------------- Filter Bar Start - ON PAGE LOAD USE THIS
+
+.systems_filter_wrapper {
+ position: relative;
+ margin: 15px 0 0 0;
+ background: $gray_light_2;
+
+	.systems_filter_container {
+		position: relative;
+		z-index: 500;
+		display: inline-block;
+		padding: 0;
+		width: 940px;
+		height: 165px;
+
+
+		// ---- A:hover Tag end;
+		// ---- End A:selected;
+
+		.systems_filter_cell {
+			@extend %filter_cell_sector;
+			margin: 0 10px 0 0;
+		}
+
+		.background_systems_it {
+			@extend %cell_h_and_w;
+			//background: url(../images/background_systems_filter_cell_it.jpg);
+		}
+
+		.background_systems_game_ops {
+			@extend %cell_h_and_w;
+			//background: url(../images/background_systems_filter_cell_gaming_ops.jpg);
+		}
+
+		.background_systems_finance {
+			@extend %cell_h_and_w;
+			//background: url(../images/background_systems_filter_cell_finance.jpg);
+		}
+
+		.background_systems_marketing {
+			@extend %cell_h_and_w;
+			//background: url(../images/background_systems_filter_cell_marketing.jpg);
+		}
+
+		a {
+
+			.systems_filter_cell {
+			 @extend %filter_cell_sector;
+			 margin: 15px 10px 0 0;
+
+				.systems_filter_cell_text {
+				 @extend %cell_background_active;
+					background: url(../images/systems_filter_cell_text_background.png) repeat;
+
+				 .systems_filter_cell_hover {
+						@extend %filter_cell_sector_hover;
+				  color: $white;
+
+						.systems_filter_cell_hover_arrow {
+							@extend %arrow;
+							position: relative;
+							display: block;
+						}
+				  }
+				}
+			}
+
+			.systems_filter_cell_last {
+				@extend %filter_cell_sector;
+				margin: 15px 15px 0 0;
+
+				.systems_filter_cell_text {
+					@extend %cell_background_active;
+					background: url(../images/systems_filter_cell_text_background.png) repeat;
+
+					.systems_filter_cell_hover {
+						@extend %filter_cell_sector_hover;
+				  width: $four_filter_width;
+
+						.systems_filter_cell_hover_arrow {
+						 @extend %arrow;
+							position: relative;
+							display: block;
+						}
+				  }
+				}
+			}
+			//---- ACTIVE End
+		}
+		// ---- A Tag end
+
+		a:hover {
+
+			.systems_filter_cell {
+				@extend %filter_cell_sector;
+				margin: 15px 10px 0 0;
+
+				.systems_filter_cell_text {
+				 @extend %cell_background_hover;
+					background: url(../images/systems_filter_cell_text_background_hover.png) repeat;
+
+				 .systems_filter_cell_hover {
+						@extend %filter_cell_sector_hover;
+				  width: $four_filter_width;
+
+						.systems_filter_cell_hover_arrow {
+							@extend %arrow;
+							position: relative;
+							display: block;
+						}
+				  }
+				}
+			}
+
+			.systems_filter_cell_last {
+				@extend %filter_cell_sector;
+				margin: 15px 15px 0 0;
+
+				.systems_filter_cell_text {
+					@extend %cell_background_hover;
+					background: url(../images/systems_filter_cell_text_background_hover.png) repeat;
+
+					.systems_filter_cell_hover {
+						@extend %filter_cell_sector_hover;
+				  width: $four_filter_width;
+
+						.systems_filter_cell_hover_arrow {
+							@extend %arrow;
+							position: relative;
+							display: block;
+						}
+				  }
+				}
+			}
+			//---- Last End
+		}
+		// ---- End A:Hover
+
+		// ---- Start A:selected
+		a.selected {
+
+				.systems_filter_cell {
+					@extend %filter_cell_sector;
+					margin: 15px 10px 0 0;
+
+				.systems_filter_cell_text {
+				 @extend %cell_background_selected;
+					background: url(../images/systems_filter_cell_text_background_hover.png) repeat;
+
+				 .systems_filter_cell_hover {
+						@extend %cell_background_selected_arrow;
+
+						.systems_filter_cell_hover_arrow {
+							@extend %arrow;
+							position: relative;
+							display: block;
+							background: url(../images/systems_filter_cell_hover_arrow.png) no-repeat;
+						}
+				  }
+				}
+			}
+
+			.systems_filter_cell_last {
+				@extend %filter_cell_sector;
+				margin: 15px 15px 0 0;
+
+				.systems_filter_cell_text {
+					@extend %cell_background_selected;
+					background: url(../images/systems_filter_cell_text_background_hover.png) repeat;
+
+					.systems_filter_cell_hover {
+						@extend %cell_background_selected_arrow;
+
+						.systems_filter_cell_hover_arrow {
+							@extend %arrow;
+							position: relative;
+							display: block;
+							background: url(../images/systems_filter_cell_hover_arrow.png) no-repeat;
+						}
+				  }
+				}
+			}
+			// End A:selected last
+		}
+	}
+}
+
+// ------------------- Filter Bar Start - ONCE A SELECTION HAS BEEN AMDE -- APPLY THIS
+
+
+%cell_background_not_selected {
+	position: relative;
+	top: 0;
+	display: block;
+	margin: 0 auto;
+	padding: 103px 0 0 0;
+	width: $hundred_percent;
+	height: 37px;
+	color: $medium_grey;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+// -------------
+
+nav.filter a.nav_deactivated {
+
+	.systems_filter_cell, .systems_filter_cell_last {
+	 @extend %filter_cell_sector;
+	 margin: 15px 10px 0 0;
+
+		.systems_filter_cell_text {
+		 @extend %cell_background_not_selected;
+			//background: url(../images/systems_filter_cell_text_background.png) repeat;
+
+		 .systems_filter_cell_hover {
+				@extend %filter_cell_sector_hover;
+				color: $white;
+			}
+		}
+	}
+}
+
+// -------------------
+
+.page_content {
+
+ .main_breadcrumb {
+	 font-weight: normal;
+	 font-size: 10px;
+  }
+}
+
+// -------------------
+
+nav > ul {
+	display: inline-block;
+	margin: 0;
+	width: $hundred_percent;
+	//background: #326295;
+}
+
+nav.filter,
+nav.sort,
+nav.switch {
+  display: block;
+  width: $hundred_percent;
+  height: 25px;
+}
+
+nav.filter {
+  width: auto;
+  height: auto;
+
+  > a {
+	  width: auto;
+	  height: auto;
+	  color: #326295;
+	  text-decoration: underline;
+	}
+}
+
+p > a {
+  width: auto;
+  height: auto;
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+	  width: auto;
+	  height: auto;
+	  text-decoration: underline;
+	  //color: $blue;
+	}
+
+	&:visited {
+	  width: auto;
+	  height: auto;
+	  color: $blue;
+	  text-decoration: underline;
+	}
+}
+
+#menubars1 {
+	display: none;
+}
+
+%trans_1 {
+	-webkit-transition: all 0.5s ease-in-out;
+	   -moz-transition: all 0.5s ease-in-out;
+	    -ms-transition: all 0.5s ease-in-out;
+	     -o-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+
+	-webkit-transition-property: height, width;
+	   -moz-transition-property: height, width;
+       -o-transition-property: height, width;
+			 		transition-property: height, width;
+	//transition: font-size 0.9s ease-in-out, height 0.9s;
+	//-webkit-transition: font-size 0.9s ease-in-out, height 0.5s;
+	//-moz-transition: font-size 0.9s ease-in-out, height 0.5s;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	font-size: inherit;
+	height: 130px;
+	width: 100%;
+	text-align: center;
+	background: #1A75BC;
+	z-index: 120;
+	@extend %trans_1;
+
+  h1 {
+    @extend %trans_1;
+    color: $white;
+
+    > span {
+			color: red;
+		}
+  }
+
+  &.small {
+    background: rgba(26,117,188,.9);
+    font-size: inherit;
+    height: 130px;
+    @extend %trans_1;
+
+	  h1 {
+			@extend %trans_1;
+	    color: $white;
+			//font-size: 24px;
+			//padding-top: 0;
+	    //text-align: left;
+	    //margin-top: 12px;
+
+			> span {
+				color: red;
+			}
+		}
+
+// scrolling up -- reduce header size and contents
+
+		.row_alt {
+			width: 100%;
+			min-width: 0;
+			//margin-left: 0;
+			//margin-right: 0;
+			//width: 940px;
+			//padding: 12px 20px 0 20px;
+			@extend %trans_1;
+
+			#logo {
+				//width: 300px;
+		    display: block;
+		    //float: left;
+			}
+
+			.navbar {
+/*
+				//float: left;
+		    width: 595px;
+		    height: 37px;
+		    display: block;
+		    clear: none;
+*/
+		    @extend %trans_1;
+			}
+		}
+	}
+
+	.navbar {
+		display: block;
+
+    .top_tabs_wrapper {
+			margin: 0 auto;
+			padding: 0;
+			width: 595px;
+			height: auto;
+			//width: 655px;
+			//padding: 0 0 30px 0;
+
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			.top_tabs {
+
+				li  {
+					display: inline;
+					list-style: none;
+
+					a {
+						display: inline-block;
+						margin: 0 0 1px 0;
+						padding: 5px 10px;
+						color: $white;
+						text-decoration: none;
+						font-weight: bold;
+						//background: $white;
+						//color: #326295;
+
+						&:hover {
+							color: $white;
+							//color: $selected;
+						}
+
+						&.top_tabs_active  {
+							color: $white;
+							//background: $medium_grey;
+							//color: #326295;
+						}
+
+						&.selected  {
+							border-top: 1px solid $selected;
+							border-right: 1px solid $selected;
+							border-bottom: none;
+							border-left: 1px solid $selected;
+							background: $selected;
+							color: $white;
+						}
+					}
+				}
+			}
+
+			// ------------ Nav Bars
+
+			// ------------ Products NAV Container - Casino Roles NAV Container
+
+			.filter_navigation_wrapper {
+				//background-color: #326295;
+
+				.sub_tabs_filter {
+				//--- DNU Thsi class is being used in the JS file
+				}
+
+				.filter_navigation {
+					margin: 0;
+					height: 36px;
+
+					nav {
+						font-weight: bold;
+
+						.ul.sub_tabs {
+							margin:0;
+							padding:0;
+							//background: #E2E2E2
+						}
+
+						ul.sub_tabs li {
+							display:block;
+							float:left;
+					    margin: 0 3px 0 0;
+						}
+
+						ul.sub_tabs li a {
+							display: block;
+							float: left;
+							height: 36px;
+							font-weight: bold;
+
+							&:hover {
+								border-radius: 4px;
+								background: $selected;
+								color: $white;
+								//background: #cccccc;
+							}
+						}
+
+						.selected {
+							border-radius: 4px;
+							background: $selected;
+							color: $white;
+							font-weight: bold;
+
+							&:hover {
+								border-radius: 4px;
+								background: $selected;
+								color: $white;
+								font-weight: bold;
+							}
+						}
+
+						.selected > span {
+							position: relative;
+							top:3px;
+							display: block;
+							margin: 0 auto;
+							width: 23px;
+							height: 13px;
+							//background: url(../images/systems_filter_cell_hover_arrow_sm.png) no-repeat
+						}
+
+						li.curent a > div {
+							position: relative;
+							top:3px;
+							display: block;
+							margin: 0 auto;
+							width: 23px;
+							height: 13px;
+							//background: url(../images/systems_filter_cell_hover_arrow_sm.png) no-repeat
+						}
+
+						.tab-content {
+							clear: both;
+							font-weight: bold;
+						}
+					}
+				}
+			} // ------------ Nav Bars END
+
+			.top_tab_1, .top_tab_2 {
+				margin: 0;
+				padding: 0;
+			}
+		}
+
+		.top_tabs {
+			display: none;
+		}
+	// navbar end
+  }
+
+  nav.filter ul li {
+	  float: left;
+	  padding: 0;
+	  color: $white;
+	  list-style: none;
+	  text-align: center;
+	  white-space: nowrap;
+	  font-weight: 500;
+	  //color: #326295;
+	  //*zoom: 1;
+
+	  a {
+		  display: block;
+		  padding: 6px 12px;
+		  color: inherit;
+		  text-decoration: none;
+
+		  &:hover {
+			  display: block;
+			  padding: 6px 12px;
+			  color: inherit;
+			  text-decoration: none;
+			  //background: $selected;
+			}
+		}
+
+		&.current {
+		  background: $selected;
+		  background-size: $hundred_percent;
+		  color: white;
+		  white-space: nowrap;
+		  //*zoom: 1
+		}
+
+		h3 {
+		  float: left;
+		  margin-left: 29px;
+		  padding: 6px 10px 6px 0;
+		  color: #888a8f;
+		  text-shadow: 0 1px 1px white;
+		  font: inherit;
+		  font-weight: bold;
+		}
+	}
+}
+
+
+[data-target="body"] {
+	//margin-top: 150px !important;
+	padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* small screens */
+
+#mobile_button,
+#mobile_nav {
+	display: none;
+}
+
+@media all and (min-width: 601px) and (max-width: 765px) {
+	[data-target="body"] {
+		margin-top: 126px !important;
+	}
+
+	#header {
+    height: 96px;
+    font-size: inherit;
+
+    &.small {
+	    height: 96px;
+    }
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+	#primary_nav {
+		display: none;
+	}
+
+	[data-target="body"] {
+		margin-top: 90px !important;
+	}
+
+	#header {
+    height: 60px;
+    font-size: inherit;
+
+    &.small {
+	    height: 60px;
+    }
+	}
+
+	h1 {
+		font-size: 24px;
+		padding-top: 0;
+    text-align: left;
+    color: $white;
+		-webkit-transition: all 0.5s ease-in-out;
+		-moz-transition: all 0.5s ease-in-out;
+		-o-transition: all 0.5s ease-in-out;
+		-ms-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+
+		> span {
+			color: red;
+		}
+	}
+
+	.row_alt {
+		width: 940px;
+		padding: 12px 20px 0 20px;
+
+		#logo {
+			width: 300px;
+	    display: block;
+	    float: left;
+		}
+
+		.navbar {
+			float: left;
+	    width: 595px;
+	    height: 37px;
+	    display: block;
+	    clear: none;
+		}
+	}
+
+	#mobile_button {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: 60px;
+		height: 60px;
+		cursor: pointer;
+
+		&.mobile_menu_icon > i {
+			margin: 9px 0 0 2px;
+			color: $white;
+			font-size: 42px;
+		}
+	}
+
+	#mobile_nav {
+		display: none;
+
+		.mobile_nav_list {}
+
+		ul {
+			position: absolute;
+			top: 60px;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			border-top: 1px solid #115C97;
+
+			-webkit-box-shadow: 0 8px 6px -6px black;
+				 -moz-box-shadow: 0 8px 6px -6px black;
+			        box-shadow: 0 8px 6px -6px black;
+
+			li {
+				float: none;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				background: rgba(26,117,188,.9);
+				list-style: none;
+				text-align: center;
+				font-weight: normal;
+				//background: #1A75BC;
+
+				a {
+
+					&.selected {
+						border-radius: 0 !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

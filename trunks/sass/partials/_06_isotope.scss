@@ -1,0 +1,32 @@
+//------------ OEM
+
+.iso_item {
+  z-index: 2;
+}
+
+html.backgroundsize .iso_small_style:before {
+  bottom: -11px;
+  margin-left: -128.25px;
+  width: 473px;
+  height: 11px;
+}
+
+.iso_container .iso_selector.type-system.current,
+.iso_container .iso_selector.type-information.current {
+  padding-bottom: 39px;
+  height: auto;
+}
+
+.iso_container .iso_selector.type-information.current.small-square,
+.iso_container .iso_selector.type-information.current.big-long {
+  padding-top: 180px;
+}
+
+html.opacity .iso_selector {
+  opacity: 0;
+}
+
+.isotope-hidden.iso_item {
+  z-index: 1;
+  pointer-events: none;
+}
